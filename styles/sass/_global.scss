@@ -1,0 +1,24 @@
+html {
+    font-size: 62.5%;
+}
+
+.wrapper {
+    max-width: 1400px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $backgroundColor;
+}
+
+h1, h2, h3, h4, p, li, a, span {
+    margin: 0;
+    padding: 0;
+    color: $contentColor;
+    text-decoration: none;
+}
+
+.fatText {
+    font-weight: 700;
+}
