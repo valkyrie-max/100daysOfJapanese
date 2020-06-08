@@ -285,11 +285,26 @@ header h1:before {
   border: 5px solid #30BCED;
 }
 
-header .desc {
-  margin-top: 40px;
+main {
+  padding-top: 20px;
 }
 
-header .desc p {
+main .mainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .desc {
+  border-right: 10px solid #30BCED;
+  padding-right: 25px;
+  height: 100%;
+}
+
+main .desc p {
   font-family: "Roboto", sans-serif;
   font-size: 1.7rem;
   line-height: 1.7;
@@ -297,27 +312,69 @@ header .desc p {
   margin-top: 20px;
 }
 
-header .desc .notice {
+main .desc .notice {
   font-size: 1.3rem;
   font-style: italic;
 }
 
-header .desc a {
+main .desc a {
   color: #30BCED;
   border-bottom: 1px solid transparent;
   -webkit-transition: 0.3s all ease-in;
   transition: 0.3s all ease-in;
-  padding-bottom: 4px;
 }
 
-header .desc .japaneseDesc {
+main .desc .japaneseDesc {
   color: #FC5130;
 }
 
-header .desc a:hover, header .desc a:focus {
-  border-bottom: 1px solid #303036;
+main .desc a:hover, main .desc a:focus {
+  border-bottom: 1px solid #30BCED;
 }
 
-header .desc a:active {
+main .desc a:active {
   padding-bottom: 0px;
+}
+
+main .socials {
+  border-left: 10px solid #FC5130;
+}
+
+main .socials ul {
+  margin: 0;
+  padding-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+main .socials ul li {
+  list-style: none;
+}
+
+main .socials ul li a {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 3.5rem;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border-bottom: 1px solid transparent;
+}
+
+main .socials ul li:nth-child(2n) a:hover, main .socials ul li:nth-child(2n) a:focus {
+  color: #FC5130;
+  border-bottom: 1px solid #FC5130;
+}
+
+main .socials ul li:nth-child(2n-1) a:hover, main .socials ul li:nth-child(2n-1) a:focus {
+  color: #30BCED;
+  border-bottom: 1px solid #30BCED;
 }

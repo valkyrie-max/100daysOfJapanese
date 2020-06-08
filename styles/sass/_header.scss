@@ -20,33 +20,4 @@ header {
         bottom: -20px;
         border: 5px solid $coldAccentColor;
     }
-    .desc {
-        margin-top: 40px;
-        p {
-            font-family: $contentFont;
-            font-size: 1.7rem;
-            line-height: 1.7;
-            letter-spacing: 0.5px;
-            margin-top: 20px;
-        }
-        .notice {
-            font-size: 1.3rem;
-            font-style: italic;
-        }
-        a {
-            color: $coldAccentColor;
-            border-bottom: 1px solid transparent;
-            transition: 0.3s all ease-in;
-            padding-bottom: 4px;
-        }
-        .japaneseDesc {
-            color: $warmAccentColor;
-        }
-        a:hover, a:focus {
-            border-bottom: 1px solid $contentColor;
-        }
-        a:active {
-            padding-bottom: 0px;
-        }
-    }
 }

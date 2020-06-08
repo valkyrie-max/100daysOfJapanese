@@ -1,0 +1,70 @@
+main {
+    padding-top: 20px;
+    .mainContent {
+        display: flex;
+        justify-content: space-between;
+    }
+    .desc {
+        border-right: 10px solid $coldAccentColor;
+        padding-right: 25px;
+        height: 100%;
+        p {
+            font-family: $contentFont;
+            font-size: 1.7rem;
+            line-height: 1.7;
+            letter-spacing: 0.5px;
+            margin-top: 20px;
+        }
+        .notice {
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+        a {
+            color: $coldAccentColor;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s all ease-in;
+        }
+        .japaneseDesc {
+            color: $warmAccentColor;
+        }
+        a:hover, a:focus {
+            border-bottom: 1px solid $coldAccentColor;
+        }
+        a:active {
+            padding-bottom: 0px;
+        }
+    }
+    .socials {
+        border-left: 10px solid $warmAccentColor;
+        ul {
+            margin: 0;
+            padding-left: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            li {
+                list-style: none;
+                a {
+                    font-family: $headingsFont;
+                    font-weight: 700;
+                    font-size: 3.5rem;
+                    transition: 0.3s all ease-in-out;
+                    border-bottom: 1px solid transparent;
+                }
+            }
+            li:nth-child(2n){
+                a:hover, a:focus {
+                    color: $warmAccentColor;
+                    border-bottom: 1px solid $warmAccentColor;
+                }
+            }
+            li:nth-child(2n-1) {
+                a:hover, a:focus {
+                    color: $coldAccentColor;
+                    border-bottom: 1px solid $coldAccentColor;
+                }
+            }
+        }
+    }
+}
