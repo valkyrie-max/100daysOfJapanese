@@ -1,6 +1,5 @@
 header {
     min-height: 200px;
-    background-color: $backgroundColor;
     h1 {
         position: relative;
         padding-top: 40px;
@@ -9,7 +8,6 @@ header {
         font-family: $headingsFont;
         font-weight: 700;
         border-bottom: 10px solid $warmAccentColor;
-        // text-shadow: 12px 12px $coldAccentColor, 14px 14px $warmAccentColor;
     }
     h1:before{
         content: " ";

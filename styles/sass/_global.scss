@@ -8,9 +8,24 @@ html {
     margin: 0 auto;
 }
 
-body {
+body.lp {
+    // position: relative;
+    height: 100%;
+    background-image: url("../assets/lpBack.jpg");
     background-color: $backgroundColor;
 }
+
+// body.lp::after {
+//     // content: "";
+//     // opacity: 0.1;
+//     // z-index: -10;
+//     // position: absolute;
+//     // top: 0;
+//     // left: 0;
+//     // width: 100%;
+//     // height: 100%;
+//     // background-image: url("../assets/lpBack.jpg");
+// }
 
 h1, h2, h3, h4, p, li, a, span {
     margin: 0;
